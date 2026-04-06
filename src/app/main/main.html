@@ -1,0 +1,29 @@
+<button (click)="sortPrice()">{{asc}}</button>
+
+
+@for (item of categories; track $index) {
+
+  <button (click)="filterByCategory(item)">{{item.name}}</button>
+}
+
+
+
+<input type="text" [(ngModel)]="rame" (ngModelChange)="filter()">
+<h1>{{rame}}</h1>
+
+
+
+@let randerproducts = filterproducts.length > 0 ? filterproducts : products;
+
+<main class="d-flex" style="flex-wrap: wrap;">
+   @for (item of randerproducts; track item.id) {
+    <div class="card" style="width: 18rem;"   (click)="getid(item)" >
+      <img [src]="item.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.name}}</h5>
+        <p class="card-text">{{item.price}}</p>
+        <a href="#" class="btn btn-primary"   >Go somewhere</a>
+      </div>
+    </div>
+   }
+</main>

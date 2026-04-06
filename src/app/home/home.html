@@ -1,0 +1,50 @@
+<button (click)="showhide()">show/hide</button>
+
+@if(show){
+  <h1>{{name}}</h1>
+}
+
+
+<!-- *ngIf  -->
+
+<p>{{age}}</p>
+
+
+<img [src]="img" alt="">
+<input type="text" [placeholder]="hint" required>
+<button (click)="changePic()">oK</button>
+
+
+<h2 >{{num}}</h2>
+<button (click)="changenum()">click</button>
+
+<ul>
+  @for (i of numbers; track $index) {
+     <li>{{i}}</li>
+  }
+</ul>
+
+
+<div class="btns">
+  <button>all</button>
+  @for (item of categories; track $index) {
+    <button>{{item.name}}</button>
+  }
+</div>
+
+
+
+
+@for (item of products; track $index) {
+
+ <div class="card" style="width: 18rem;">
+  <img [src]="item.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.title}}</h5>
+    <p class="card-text">{{item.price}}</p>
+        <p class="card-text">{{item.rating.rate}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+}
