@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Categories, Product } from '../main/moduls';
+import {  Product } from '../models/products';
 
 
 @Component({
@@ -38,48 +38,48 @@ export class Main {
     
   }
 
-  filterByCategory(obj : Categories){
+  // filterByCategory(obj : Categories){
 
-     this.filterproducts = this.products.filter(el => el.categoryId == obj.id)
-  }
+  //    this.filterproducts = this.products.filter(el => el.categoryId == obj.id)
+  // }
 
   filterproducts : Product[]=[]
 
-  categories : Categories[] =[
+//   categories : Categories[] =[
 
-  {
-    "id": 1,
-    "name": "Salads"
-  },
-  {
-    "id": 2,
-    "name": "Soups"
-  },
-  {
-    "id": 3,
-    "name": "Chicken-Dishes"
-  },
-  {
-    "id": 4,
-    "name": "Beef-Dishes"
-  },
-  {
-    "id": 5,
-    "name": "Seafood-Dishes"
-  },
-  {
-    "id": 6,
-    "name": "Vegetable-Dishes"
-  },
-  {
-    "id": 7,
-    "name": "Bits&Bites"
-  },
-  {
-    "id": 8,
-    "name": "On-The-Side"
-  }
-]
+//   {
+//     "id": 1,
+//     "name": "Salads"
+//   },
+//   {
+//     "id": 2,
+//     "name": "Soups"
+//   },
+//   {
+//     "id": 3,
+//     "name": "Chicken-Dishes"
+//   },
+//   {
+//     "id": 4,
+//     "name": "Beef-Dishes"
+//   },
+//   {
+//     "id": 5,
+//     "name": "Seafood-Dishes"
+//   },
+//   {
+//     "id": 6,
+//     "name": "Vegetable-Dishes"
+//   },
+//   {
+//     "id": 7,
+//     "name": "Bits&Bites"
+//   },
+//   {
+//     "id": 8,
+//     "name": "On-The-Side"
+//   }
+// ]
 
 
   products :Product[] = [
