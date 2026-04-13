@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { Product } from '../models/products';
-import { Helper } from '../services/helper';
+import { Helper } from '../services/Helper';
 import { ActivatedRoute } from '@angular/router';
-import { Api } from '../services/api';
+import { Api } from '../services/Api';
 
 @Component({
   selector: 'app-details',
