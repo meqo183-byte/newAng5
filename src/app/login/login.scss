@@ -1,4 +1,4 @@
-.login-form {
+form {
   width: 100%;
   max-width: 380px;
   margin: 80px auto;
@@ -10,17 +10,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.login-form h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 24px;
-  color: #1f2937;
-}
-
-.form-group {
-  margin-bottom: 20px;
 }
 
 label {
@@ -43,16 +32,6 @@ input:focus {
   outline: none;
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
-}
-
-input.ng-invalid.ng-touched {
-  border-color: #ef4444;
-}
-
-.error {
-  margin-top: 6px;
-  font-size: 12px;
-  color: #ef4444;
 }
 
 button {
