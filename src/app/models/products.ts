@@ -1,10 +1,12 @@
 export class Product { 
-  categoryId!:number;
-  id!:number;
-  image!:string;
-  name!:string;
-  nuts!:boolean;
-  price!:number;
-  spiciness!:number;
-  vegeterian!:boolean;
+  name! : string
+  description! : string
+  vegetarian! : boolean
+  spiciness! : number
+  price! : number
+  image! : string
+  method! : string
+  ingredients! : string[]
+  categoryId! : number
 }
+

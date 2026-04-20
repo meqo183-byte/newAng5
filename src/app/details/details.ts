@@ -32,7 +32,7 @@ export class Details {
       this.api.getAll("Products/GetAll").subscribe((resp : any) => {
       console.log(resp)
       this.produuctArr = resp
-      this.selectedProduct =this.produuctArr.find(el => el.id == this.selectedId) || new Product()
+      this.selectedProduct =this.produuctArr.find((el : any) => el.id == this.selectedId) || new Product()
       this.cdr.detectChanges()  ////  აუცილებელია ყველა ქოლის მერე 
 
     })
